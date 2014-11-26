@@ -9,4 +9,4 @@
         'source': 'https://jds.objects.dreamhost.com/Anaconda-2.1.0-Linux-x86.sh',
         'source_hash': 'sha512=db497942596701b660b4e2e93d87e02b8f76a3d65874f827291dc729937bc955732fc6a9556f6bf9d367244c460a37352218d4df2ede0a64cad798a49a77c656'
     }
-}, merge=salt['pillar.get']('anaconda:lookup'), grain='cpuarch', default='x86_64') %}
+}, merge=salt['pillar.get']('anaconda'), grain='cpuarch', default='x86_64') %}
